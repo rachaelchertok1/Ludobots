@@ -3,7 +3,7 @@ import time
 
 t = 1/60
 physicsClient = p.connect(p.GUI)
-for i in range(0,1000):
+for i in range(0,20000):
     print("Iteration: ", i)
     time.sleep(t)
     p.stepSimulation()
