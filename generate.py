@@ -10,23 +10,15 @@ x = 0
 y = 0
 z = 0.5
 
-'''
-x_box1 = 0
-y_box1 = 0
-z_box1 = 0.5
-
-x_box2 = 0
-y_box2 = 0
-z_box2 = 1.5
-'''
 
 for i in range(0,10):
     #Stores a box with initial position x=0, y=0, z=0
     pyrosim.Send_Cube(name="Box", pos=[x,y,z], size=[length,width,height])
     z+=1
+    length = length * 0.9
+    width = width * 0.9
+    height = height * 0.9
     
-
-#pyrosim.Send_Cube(name="Box2", pos=[x_box2,y_box2, z_box2], size=[length,width,height])
 
 #tells pyrosim to close the sdf file
 pyrosim.End() 
