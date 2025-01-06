@@ -14,6 +14,9 @@ p.setGravity(0,0,-9.8)
 #Adding a floor
 planeId = p.loadURDF("plane.urdf")
 
+#Adding a robot
+robotId = p.loadURDF("body.urdf")
+
 #Tells pybullet to read in the world described in box.sdf (which was created in generate.py)
 p.loadSDF("world.sdf")
 for i in range(0,2000):
