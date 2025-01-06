@@ -16,7 +16,7 @@ planeId = p.loadURDF("plane.urdf")
 
 #Tells pybullet to read in the world described in box.sdf (which was created in generate.py)
 p.loadSDF("boxes.sdf")
-for i in range(0,1000):
+for i in range(0,2000):
     print("Iteration: ", i)
     time.sleep(t)
     p.stepSimulation()
